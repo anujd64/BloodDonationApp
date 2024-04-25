@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/text"
+        style="@style/TextAppearance.App.FragmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Profile" />
+
+    <!-- User Image -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_person_24"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.ExtraLarge" />
+
+    <!-- Upload Image Button -->
+    <Button
+        android:id="@+id/button_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Upload Image"
+        android:textColor="@color/white" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        tools:text="User Name"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="18sp" />
+
+    <!-- User Email -->
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        tools:text="user@example.com"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="16sp" />
+
+    <!-- Blood Group -->
+    <TextView
+        android:id="@+id/textView_blood_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        tools:text="Blood Group: O+"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="16sp" />
+
+    <!-- Phone Number -->
+    <TextView
+        android:id="@+id/textView_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        tools:text="Phone Number: +1234567890"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="16sp" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        tools:text="Address: 123 Street, City, Country"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Logout" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+</LinearLayout>

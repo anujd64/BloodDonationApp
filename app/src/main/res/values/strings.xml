@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BloodLink</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="select_blood_group">Select Blood Group</string>
+    <string name="profile">Profile</string>
+    <string name="messages">Messages</string>
+    <string name="delete">Delete</string>
+</resources>
